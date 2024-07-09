@@ -36,7 +36,7 @@ def save_quiz(quiz_data, filename=JSON_FILE):
         json.dump(quiz_data, file, indent=4)
 
 # Command handler to add a new question
-def add_question(update: Update, context: CallbackContext) -> None:
+async def add_question(update: Update, context: CallbackContext) -> None:
     message = update.message.text.split(maxsplit=1)
     if len(message) < 2:
         await update.message.reply_text('Please provide at least one valid question in JSON format.')
@@ -75,7 +75,7 @@ async def send_quiz(context: CallbackContext):
         )
 
 # Command handler to delete all questions
-def delete_questions(update: Update, context: CallbackContext) -> None:
+async def delete_questions(update: Update, context: CallbackContext) -> None:
     save_quiz([], JSON_FILE)  # Empty list to clear all questions
     await update.message.reply_text('All previous questions have been deleted.')
 
