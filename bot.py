@@ -39,7 +39,7 @@ def save_quiz(quiz_data, filename=JSON_FILE):
 def add_question(update: Update, context: CallbackContext) -> None:
     message = update.message.text.split(maxsplit=1)
     if len(message) < 2:
-        update.message.reply_text('Please provide at least one valid question in JSON format.')
+        await update.message.reply_text('Please provide at least one valid question in JSON format.')
         return
 
     try:
@@ -47,7 +47,7 @@ def add_question(update: Update, context: CallbackContext) -> None:
         for question_str in questions:
             new_question = json.loads(question_str)
             add_question_to_quiz(new_question)
-        update.message.reply_text('Questions added successfully!')
+        await update.message.reply_text('Questions added successfully!')
     except json.JSONDecodeError as e:
         update.message.reply_text(f'Error: Invalid JSON format. {str(e)}')
         
@@ -77,7 +77,7 @@ async def send_quiz(context: CallbackContext):
 # Command handler to delete all questions
 def delete_questions(update: Update, context: CallbackContext) -> None:
     save_quiz([], JSON_FILE)  # Empty list to clear all questions
-    update.message.reply_text('All previous questions have been deleted.')
+    await update.message.reply_text('All previous questions have been deleted.')
 
 async def hello(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text('Hello, Bot is Working.')
