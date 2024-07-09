@@ -13,10 +13,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Replace with your Telegram bot token
-TOKEN = '7288946053:AAETpRKQwdxb6HiZpC4FLAA1BtKc9thaICI'
+TOKEN = 'I'
 
 # Replace with your channel username or ID
-CHANNEL_ID = '@NEETToppersTelegram'
+CHANNEL_ID = '@i'
 
 # JSON file path
 JSON_FILE = 'quiz_questions.json'
