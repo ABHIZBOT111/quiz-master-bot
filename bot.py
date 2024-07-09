@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -13,9 +12,11 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+# Replace with your Telegram bot token
 # Load environment variables
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
+
 
 # JSON file path
 JSON_FILE = 'quiz_questions.json'
@@ -78,9 +79,6 @@ def delete_questions(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('All previous questions have been deleted.')
 
 def main():
-    if not TOKEN or not CHANNEL_ID:
-        raise ValueError("Both TELEGRAM_BOT_TOKEN and TELEGRAM_CHANNEL_ID environment variables must be set.")
-    
     # Create the Application and pass it your bot's token
     application = Application.builder().token(TOKEN).build()
 
