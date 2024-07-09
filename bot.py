@@ -2,7 +2,7 @@ import json
 import os
 import logging
 from telegram import Update
-from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler
+from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
 from apscheduler.schedulers.background import BackgroundScheduler
 
 # Enable logging
