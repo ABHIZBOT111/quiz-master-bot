@@ -79,6 +79,9 @@ def delete_questions(update: Update, context: CallbackContext) -> None:
     save_quiz([], JSON_FILE)  # Empty list to clear all questions
     update.message.reply_text('All previous questions have been deleted.')
 
+async def hello(update: Update, context: CallbackContext) -> None:
+    await update.message.reply_text('Hello, Bot is Working.')
+
 def main():
     # Create the Application and pass it your bot's token
     application = Application.builder().token(TOKEN).build()
@@ -87,6 +90,7 @@ def main():
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("addquestion", add_question))
     application.add_handler(CommandHandler("deletequestions", delete_questions))
+    application.add_handler(MessageHandler(filters.Text("hello"), hello))
 
     # Start the Bot
     application.run_polling()
