@@ -4,6 +4,8 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
 from apscheduler.schedulers.background import BackgroundScheduler
+from keep_alive import keep_alive
+keep_alive()
 
 # Enable logging
 logging.basicConfig(
