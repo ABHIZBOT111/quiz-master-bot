@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Tadoba- Andhari Tiger Reserve, recently seen in the news, is located in which state?",
+        "options": [
+            "Maharashtra",
+            "Gujarat",
+            "Odisha",
+            "Andhra Pradesh"
+        ],
+        "correct_option_id": 0
+    },
+    {
+        "question": "Recently, where was the Kavango-Zambezi Trans-Frontier Conservation Area (KAZA TFCA) Summit held?",
+        "options": [
+            "Malawi",
+            "Libya",
+            "Zambia",
+            "Senegal"
+        ],
+        "correct_option_id": 2
+    },
+    {
+        "question": "The Mid-year climate conference, also known as the 60th meeting of the Subsidiary Bodies (SB60), recently organized in which country?",
+        "options": [
+            "France",
+            "Russia",
+            "Germany",
+            "Poland"
+        ],
+        "correct_option_id": 2
+    },
+    {
+        "question": "Recently, ISRO collaborated with which company for sustainable space exploration through additive manufacturing?",
+        "options": [
+            "Wipro 3D",
+            "Skyroot Aerospace",
+            "Google 3D",
+            "IBM"
+        ],
+        "correct_option_id": 0
+    },
+    {
+        "question": "Recently, which research institute has developed a way of generating non-infectious Nipah virus-like particles (VLPs) in the laboratory?",
+        "options": [
+            "Central Drug Research Institute",
+            "Institute of Genomics and Integrative Biology",
+            "Institute of Advanced Virology",
+            "Raman Research Institute"
+        ],
+        "correct_option_id": 2
+    },
+    {
+        "question": "Which tiger reserve of Maharashtra recently reported the first photographic record of the \u2018spot-bellied eagle owl\u2019?",
+        "options": [
+            "Tadoba Tiger Reserve",
+            "Pench Tiger Reserve",
+            "Koyna Tiger Reserve",
+            "Umred Karhandla Sanctuary"
+        ],
+        "correct_option_id": 1
+    },
+    {
+        "question": "Akatsuki Mission, recently seen in news, is associated with which space agency?",
+        "options": [
+            "NASA",
+            "JAXA",
+            "ISRO",
+            "CNSA"
+        ],
+        "correct_option_id": 1
+    },
+    {
+        "question": "Recently, which country decided to allow non-citizen residents from the Five Eyes Alliance to join its armed forces?",
+        "options": [
+            "Australia",
+            "Canada",
+            "US",
+            "UK"
+        ],
+        "correct_option_id": 0
+    },
+    {
+        "question": "Ministry of Defence recently signed an MoU with which ministry to set up a dedicated Tele Manas Cell for the armed forces?",
+        "options": [
+            "Ministry of Home Affairs",
+            "Ministry of Agriculture",
+            "Ministry of Health and Family Welfare",
+            "Ministry of Communications"
+        ],
+        "correct_option_id": 2
+    },
+    {
+        "question": "Which regulatory body recently imposed a fine on individuals for allegedly operating a \u2018pump and dump\u2019 scheme?",
+        "options": [
+            "SEBI",
+            "FCI",
+            "NABARD",
+            "NSE"
+        ],
+        "correct_option_id": 0
+    }
+]
